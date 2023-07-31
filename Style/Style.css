@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@200;400;700&display=swap&family=Gochi+Hand&display=swap');
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+/*original site format*/
+:root {
+	font-family: 'Poppins', sans-serif;
+	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%);
+}
+/* roma street */
+h1 {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 7rem;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+@media screen and (max-width:900px) and (min-width:0px) {
+	h1{
+		font-size: 6rem;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:900px) {
+	h1{
+		font-size: 9rem;
+	}
+}
+/* adjust h1 position */
+.adjust-line-height {
+	line-height: 520%;
+	margin-top: 3rem;
+	margin-bottom: 0.5rem;
+}
+/* heading 1 on location, food and about pages */
+.h1edit {
+	font-size: 4rem;
+	line-height: 3.3rem;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+@media screen and (max-width:1000px) and (min-width:600px) {
+	.h1edit{
+		font-size: 4rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:1000px) {
+	.h1edit{
+		font-size: 6rem;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+}
+/* for kids! */
+h3 {
+	margin-top: 0.2rem;
+	margin-bottom: 3%;
+	font-family: 'Gochi Hand', cursive;
+	font-size: 3.3rem;
+	text-align: center;
+	transform: rotate(-5deg);
+	color: seagreen;
+	background-color: transparent;
+}
+@media screen and (max-width: 600px) and (min-width:0px) {
+	h3 {
+		margin-bottom: 12%;
+	}
+}
+/* footer attributes */
+footer {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.1rem;
+	margin-top: 1rem;
+	padding: 2rem;
+	text-align: center;
+	font-weight: 500;
+	color: rgb(85, 85, 85);
+}
+@media screen and (max-width:2000px) and (min-width:1000px) {
+	footer{
+		font-size: 1.2rem;
+	}
+}
+/* nav icon attributes */
+.btn {
+	color: rgb(0, 0, 0);
+	font-size: 1.5rem;
+}
+/* icons darker on mouse click */
+.btn:hover {
+	color: rgb(46, 114, 55);
+	font-weight: 700;
+}
+.btn:before {
+	color: black;
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+	.btn {
+		font-size: 1.3rem;
+	}
+}
+/* determines image fade in */
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* determines length of image fade in */
+.fadein {
+	animation: 1.5s linear fadein;
+}
+/* home page hero image */
+.mainphoto {
+	display: flex;
+	margin: auto;
+	object-fit: cover;
+	width: 95%;
+	margin-bottom: 0%;
+	margin-top: 4%;
+	border-radius: 2rem;
+	height:auto;
+	max-width:100%;
+	min-width: 100%;
+	min-height: 100%;
+	object-position: top;
+}
+@media screen and (max-width:800px) and (min-width:0px) {
+	.mainphoto{
+		height: 100vw;
+		margin-top: 8%;
+	}
+}
+/* home page photos */
+.photocollage {
+	width: 100%;
+	border-radius: 2rem;
+}
+/* black small heading text */
+.title {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 400;
+	padding-bottom: 0;
+	font-weight: bold;
+	background-color: transparent;
+	margin-top: 5%;
+	margin-left: 5%;
+	color: black;
+}
+/* icons darker on mouse click */
+.title:hover {
+	color: rgb(46, 114, 55);
+	font-weight: 700;
+}
+.title:before {
+	color: black;
+}
+/* entire nav bar */
+ul {
+	font-family: 'Poppins', sans-serif;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+	ul {
+		margin-top: 2rem;
+		margin-bottom: 0px;
+	}
+}
+@media screen and (max-width:900px) and (min-width:0px) {
+	ul {
+		justify-content: space-evenly;
+		margin-top: 1.8rem;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:900px) {
+	ul {
+		justify-content: space-evenly;
+		max-width: 50%;
+	}
+}
+/* nav bar decorations */
+ul li a {
+	text-decoration: none;
+}
+/*name of nav bar buttons*/
+.name {
+	margin-top: 1rem;
+}
+@media screen and (max-width:1000px) and (min-width:0px) {
+	.name {
+		margin-top: 0rem;
+	}
+}
+/* the grey line for header and footer */
+.line {
+	border-bottom: 2px solid rgb(100, 100, 100);
+	display: flex;
+	margin: auto;
+	width: 80%;
+	margin-top: 3rem;
+	margin-bottom: 2%;
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+	.line {
+		margin-top: 1.5rem;
+	}
+}
+@media screen and (max-width:1000px) and (min-width:600px) {
+	.line {
+		margin-top: 2rem;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:1000px) {
+	.line {
+		margin-top: 3rem;
+		width: 88%;
+	}
+}
+/* large initial text on home page */
+.herotext {
+	font-family: 'Poppins', sans-serif;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 1.5rem;
+	margin-top: 2.5rem;
+	font-size: 2rem;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+}
+@media screen and (max-width: 600px) and (min-width:0px) {
+	.herotext {
+		font-size: 20px;
+	}
+}
+/* individual curved information tabs */
+.card {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/*lot of curved information tabs*/
+.cardrow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+@media screen and (max-width: 600px) and (min-width:0px) {
+	.card {
+		padding: 5%;
+		background-color: rgb(255, 255, 255);
+		border-radius: 3rem;
+		margin: 1rem;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+	.card {
+		padding: 3%;
+		background-color: rgb(255, 255, 255);
+		border-radius: 3rem;
+		max-width: 36%;
+		min-width: 36%;
+		margin: 1rem;
+	}
+}
+@media screen and (max-width: 2000px) and (min-width:1000px) {
+	.card {
+		padding: 1%;
+		background-color: rgb(255, 255, 255);
+		border-radius: 3rem;
+		margin: 0.8rem;
+		max-width: 20%;
+		min-width: 17%;
+	}
+}
+/* image of map */
+.map {
+	margin: auto;
+}
+@media screen and (max-width: 600px) and (min-width:0px) {
+	.map {
+		max-width:90%;
+		min-width: 90%;
+		margin-left: 5%;
+		margin-top: 3%;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width:600px) {
+	.map {
+		max-width:60%;
+		min-width: 60%;
+		margin-left: 23%;
+	}
+}
+@media screen and (max-width: 2000px) and (min-width:1000px) {
+	.map {
+		max-width:40%;
+		min-width: 40%;
+		margin-left: 45%;
+		margin-top: 5%;
+	}
+}
+/* main title of map */
+.maptitle {
+	font-weight: 800;
+}
+@media screen and (max-width: 600px) and (min-width:0px) {
+	.maptitle {
+		margin-left: 23%;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		line-height: 3rem;
+		font-size: 3rem;
+		text-align: center;
+		margin-top: 2rem;
+		margin-bottom: 5%;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width:600px) {
+	.maptitle {
+		font-size: 4rem;
+		text-align: center;
+		margin-top: 2rem;
+	}
+}
+@media screen and (max-width: 2000px) and (min-width:1000px) {
+	.maptitle {
+		margin-left: 25%;
+		position: absolute;
+		font-size: 7rem;
+		margin-top: 25%;
+		word-spacing: 999999999px;
+		line-height: 5.5rem;
+		background-color: transparent;
+	}
+}
+/* further context of map */
+@media screen and (max-width: 1339px) and (min-width:0px) {
+	.maptext {
+		color: transparent;
+		position: absolute;
+		z-index: -1;
+	}
+}
+@media screen and (max-width: 2000px) and (min-width:1339px) {
+	.maptext {
+		color: rgb(100, 100, 100);
+		position: absolute;
+		margin-top: 40%;
+		margin-left: 25%;
+		margin-right: 55%;
+		background-color: transparent;
+		font-size: 1.3rem;
+	}
+}
+/* text within the category pages- 'cafe', 'flora', 'gardens', 'fun', 'playground' and 'wildlife' */
+.categorytext {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 20%;
+	margin-right: 20%;
+	color: rgb(100, 100, 100);
+	text-align: center;
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+	.categorytext{
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 5%;
+	}
+}
+@media screen and (max-width:1000px) and (min-width:600px) {
+	.categorytext{
+		font-size: 1.2rem;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:1000px) {
+	.categorytext{
+		font-size: 1.4rem;
+		margin-bottom: 4%;
+		margin-top: 4%;
+	}
+}
+/* information tabs within the category pages- 'gardens' and 'fun' */
+.categorycard {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* row of category page information tabs */
+.categorycardrow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+@media screen and (max-width: 600px) and (min-width:0px) {
+	.categorycard {
+		padding: 5%;
+		background-color: rgb(255, 255, 255);
+		border-radius: 3rem;
+		margin: 1rem;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+	.categorycard {
+		padding: 3%;
+		background-color: rgb(255, 255, 255);
+		border-radius: 3rem;
+		max-width: 36%;
+		min-width: 36%;
+		margin: 1rem;
+	}
+}
+@media screen and (max-width: 2000px) and (min-width:1000px) {
+	.categorycard {
+		padding: 2%;
+		background-color: rgb(255, 255, 255);
+		border-radius: 3rem;
+		margin: 2rem;
+		max-width: 40%;
+		min-width: 40%;
+	}
+}
+/* breadcrumb */
+ol {
+	margin-left: 10%;
+	list-style: none;
+	display: flex;
+	text-transform: capitalize;
+}
+ol:hover {
+	color: rgb(46, 114, 55);
+}
+ol:before {
+	color: black;
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+	ol {
+		margin-left: 31px;
+		margin-top:10px;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:1000px) {
+	ol {
+		margin-left: 6%;
+	}
+}
+/* breadcrumb individual text */
+a {
+	text-decoration: none;
+	color: rgb(70, 70, 70);
+	font-size: 1.3rem;
+}
+a:hover {
+	color: black;
+	font-weight: 700;
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+	a {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:1000px) {
+	a {
+		font-size: 1.6rem;
+	}
+}
+/* lot of photos within the category pages 'playground', 'wildlife', 'garden cafe' and 'flora' */
+.categoryphotolist {
+	border-radius: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/* individual photos within the category pages 'playground', 'wildlife', 'garden cafe' and 'flora' */
+.categoryphotoindividual {
+	border-radius: 5%;
+	object-fit: cover;
+}
+@media screen and (max-width: 600px) and (min-width:0px) {
+	.categoryphotoindividual {
+		width: 100%;
+		margin-top:3%;
+		margin-bottom: 3%;
+	}
+}
+@media screen and (max-width: 2000px) and (min-width:600px) {
+	.categoryphotoindividual {
+		width: 43%;
+		margin-left:1%;
+		margin-right:1%;
+	}
+}
+/* individual landscape photos within the category pages 'playground', 'wildlife', 'garden cafe' and 'flora' */
+.landscapephoto {
+	border-radius: 2rem;
+}
+@media screen and (max-width: 600px) and (min-width:0px) {
+	.landscapephoto {
+		width: 100%;
+		margin-top: 3%;
+		margin-bottom: 5%;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width:600px) {
+	.landscapephoto {
+		width: 88%;
+		object-fit: cover;
+	}
+}
+@media screen and (max-width: 2000px) and (min-width:1000px) {
+	.landscapephoto {
+		width: 88%;
+	}
+}
+/* margin assist */
+@media screen and (max-width: 2000px) and (min-width:1000px) {
+	.blank {
+		padding: 1rem;
+	}
+}
+@media screen and (max-width: 1000px) and (min-width:0px) {
+	.blank {
+		padding: 0.5rem;
+	}
+}
+/* information tab titles of 'gardens' and 'fun' category pages */
+.categorytitle {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding-bottom: 0;
+	font-weight: bold;
+	background-color: transparent;
+	margin-top: 5%;
+	margin-left: 5%;
+	color: black;
+}
+@media screen and (max-width:1000px) and (min-width:0px) {
+	.categorytitle {
+		font-size: 1.3rem;
+	}
+}
+.categorytitle:hover {
+	color: rgb(46, 114, 55);
+	font-weight: 700;
+}
+.categorytitle:before {
+	color: black;
+	font-weight: 700;
+}
+/* information tab sub-text of 'gardens' and 'fun' category pages */
+.categorytabtext {
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	color: rgb(100, 100, 100);
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	text-decoration: none;
+	font-weight: 500;
+	background-color: transparent;
+}
+@media screen and (max-width:1000px) and (min-width:0px) {
+	.categorytabtext {
+		font-size: 1rem;
+	}
+}
+/* titles of 'about' page */
+.abouttitle {
+	font-weight: 700;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 2rem;
+	margin-top: 2.5rem;
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+	.abouttitle{
+		font-size: 1.6rem;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:1000px) {
+	.abouttitle{
+		font-size: 2.1rem;
+	}
+}
+/* text of 'about' page */
+.abouttext {
+	margin-left: 12%;
+	margin-right: 12%;
+	margin-top: 2%;
+	color: rgb(100, 100, 100);
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+	.abouttext{
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width:1000px) and (min-width:600px) {
+	.abouttext{
+		font-size: 1rem;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:600px) {
+	.abouttext{
+		font-size: 1.4rem;
+	}
+}
+/* contact details of 'about' page */
+.abouttextcontact {
+	margin-left: 12%;
+	margin-right: 12%;
+	margin-top: 2%;
+	color: rgb(55, 133, 79);
+	font-weight: 500;
+	font-size: 1.7rem;
+	line-height: 1.3rem;
+}
+@media screen and (max-width:1000px) and (min-width:600px) {
+	.abouttextcontact{
+		font-size: 1.5rem;
+	}
+}
+@media screen and (max-width:600px) and (min-width:0px) {
+	.abouttextcontact{
+		font-size: 1.1rem;
+		line-height: 1.7rem;
+	}
+}
+.abouttextcontact:hover {
+	font-weight: bold;
+}
+/* indicates which page the user is on with bold text */
+.indicate {
+	font-weight: 800;
+}
+/* Roma Street logo in top right corner on desktop version */
+@media screen and (max-width:2000px) and (min-width:900px) {
+	.logo{
+		position: absolute;
+		font-size: 2rem;
+		color: white;
+		display: flex;
+		flex-direction: column-reverse;
+		margin-left: 77%;
+		top:4%;
+		font-weight: 800;
+		line-height: 2.5rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-radius: 4rem;
+		background-color: rgb(207,249,218);
+		background: linear-gradient(315deg, rgb(68, 155, 91) 0%, rgb(136, 204, 128) 100%);
+	}
+}
+@media screen and (max-width:900px) and (min-width:0px) {
+	.logo{
+		position: absolute;
+		color: transparent;
+	}
+}
+@media screen and (max-width:2000px) and (min-width:900px) {
+	.logo:hover{
+		color: rgb(14, 26, 15);
+	}
+}
